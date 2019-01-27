@@ -95,17 +95,6 @@ services:
     networks:
       - default
     
-
-  phpmyadmin:
-    image: phpmyadmin/phpmyadmin:latest
-    ports:
-      - "${PHPMYADMIN_HOST_PORT}:80"
-    networks:
-      - default
-    environment:
-      - PMA_HOST=mysql
-      - PMA_PORT=3306
-
   phpredisadmin:
     image: erikdubbelboer/phpredisadmin:latest
     ports:
